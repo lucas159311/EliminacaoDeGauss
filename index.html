@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="icon" type="icon/png" href="icon.png"/>
+    <title>Método da Eliminação de Gauss</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                Método da Eliminação de Gauss
+            </div>
+            <div class="card-body">
+                <p align="center">Escolha o tamanho da sua Matriz:</p>
+                <div align="center">
+                    <input type="button" class="btn btn-dark" value="Matriz 2x2" onclick="GeraMatriz(2)">
+                    <input type="button" class="btn btn-dark" value="Matriz 3x3" onclick="GeraMatriz(3)">
+                    <input type="button" class="btn btn-dark" value="Matriz 4x4" onclick="GeraMatriz(4)">
+                    <input type="button" class="btn btn-dark" value="Matriz 5x5" onclick="GeraMatriz(5)">
+                    <input type="button" class="btn btn-dark" value="Matriz 6x6" onclick="GeraMatriz(6)">
+                    <input type="button" class="btn btn-dark" value="Matriz 7x7" onclick="GeraMatriz(7)">
+                    <input type="button" class="btn btn-dark" value="Matriz 8x8" onclick="GeraMatriz(8)">
+                    <input type="button" class="btn btn-dark" value="Matriz 9x9" onclick="GeraMatriz(9)">
+                    <input type="button" class="btn btn-dark" value="Matriz 10x10" onclick="GeraMatriz(10)">
+                </div>
+                <div align="center" id="Matriz">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

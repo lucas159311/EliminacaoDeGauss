@@ -1,0 +1,15 @@
+.card{
+    margin-top: 1%;
+}
+p{
+    font-size: large;
+}
+#Matriz{
+    margin-top: 3%;
+}
+input[type="number"]{
+    width: 5%;
+    height: 3%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
