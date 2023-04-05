@@ -87,7 +87,12 @@ function CalculaGauss(matriz) {
 function ExibeResultado(resultado){
   console.log(resultado);
   for(var i=0; i < resultado.length; i++){
-    document.getElementById('Matriz').innerHTML += resultado[i];
-    document.getElementById('Matriz').innerHTML += "<br>";
+      if(typeof resultado[i] === "number"){
+          document.getElementById('Matriz').innerHTML += resultado[i];
+          document.getElementById('Matriz').innerHTML += "<br>";
+      }else{
+           document.getElementById('Matriz').innerHTML += "o indice "+i+" não tem solução!";
+           document.getElementById('Matriz').innerHTML += "<br>";   
+      }
   }
 }
