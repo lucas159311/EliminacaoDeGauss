@@ -19,6 +19,7 @@ function GeraMatriz(indice){
 
 function LimparMatriz(){
     document.getElementById('Matriz').innerHTML = "";
+    document.getElementById('Resultado').innerHTML = "";
 }
 
 function CriaMatrizParaCalculo(indice){
@@ -85,14 +86,16 @@ function CalculaGauss(matriz) {
 }
 
 function ExibeResultado(resultado){
+
   console.log(resultado);
+  document.getElementById('Resultado').innerHTML = "";
   for(var i=0; i < resultado.length; i++){
-      if(typeof resultado[i] === "number"){
-          document.getElementById('Matriz').innerHTML += resultado[i];
-          document.getElementById('Matriz').innerHTML += "<br>";
+      if(typeof resultado[i] === "number" && !isNaN(resultado[i])){
+          document.getElementById('Resultado').innerHTML += "X<sub>" + i +"</sub> = " + resultado[i];
+          document.getElementById('Resultado').innerHTML += "<br>";
       }else{
-           document.getElementById('Matriz').innerHTML += "o indice "+i+" não tem solução!";
-           document.getElementById('Matriz').innerHTML += "<br>";   
+           document.getElementById('Resultado').innerHTML += "X<sub>" + i +"</sub> não tem solução!";
+           document.getElementById('Resultado').innerHTML += "<br>";   
       }
   }
 }
